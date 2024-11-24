@@ -7,18 +7,19 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 	return (
 		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+			<h1 className="text-center mt-5">Counter</h1>
+
+				<div className="clock col-lg-6 col-12 m-auto">
+					<div className="icon rounded-3 bg-dark bg-gradient border border-dark-subtle">
+						<i class="fa-regular fa-clock"></i>
+					</div>
+					<div className="mil rounded-3 bg-dark bg-gradient border border-dark-subtle">0</div>
+					<div className="cen rounded-3 bg-dark bg-gradient border border-dark-subtle">0</div>
+					<div className="dec rounded-3 bg-dark bg-gradient border border-dark-subtle">0</div>
+					<div className="uni rounded-3 bg-dark bg-gradient border border-dark-subtle">0</div>
+				</div>
+			
+
 		</div>
 	);
 };
